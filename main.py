@@ -3,8 +3,12 @@ import random
 # Roll dice function
 def RollDice():
     roll = random.randint(1, 6)
-    convert = "Your roll was: {}".format(roll)
-    print("\n" + convert + "\n")
+    rollString = "{}".format(roll)
+    text = "Your roll was: "
+    print(text)
+    print("- - -")
+    print("- " + rollString + " -")
+    print("- - -" + "\n")
     Menu()
 
 def Menu():
